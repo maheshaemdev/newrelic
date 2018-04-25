@@ -20,20 +20,20 @@ Instead of creating two seperate components i have authored the above two compon
 
 ## MarqueeL Component Assembly:
 
-.Container Component
-    .Column-Container Component
-        .Column-1
-            .Image Component
-            .Title Component
-            .CTA Component
-        .Column-2
-            .Image Component
+* .Container Component
+    * .Column-Container Component
+        * .Column-1
+            * .Image Component
+            * .Title Component
+            * .CTA Component
+        * .Column-2
+            * .Image Component
 
 ## Product Combinator Component
 
-.Container Component
-    .Column-Container Component
-        .Column-1
-            .Title Component
-        .Column-2
-            .Tabs Component
+* .Container Component
+    * .Column-Container Component
+        * .Column-1
+            * .Title Component
+        * .Column-2
+            * .Tabs Component
