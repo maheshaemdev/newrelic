@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Column-Control"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab1
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Layout Options"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <vertical-padding
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    fieldDescription="Add the column padding to top and bottom of each column"
+                                    fieldLabel="Vertical Padding"
+                                    name="./verticalPadding">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <no jcr:primaryType="nt:unstructured" text="No padding" value="no"/>
+                                    <small jcr:primaryType="nt:unstructured" text="Small padding" value="small"/>
+                                    <medium jcr:primaryType="nt:unstructured" text="Medium padding" value="medium"/>
+                                    <large jcr:primaryType="nt:unstructured" text="Large padding" value="large"/>
+                                </items>
+                            </vertical-padding>
+                            <horizontal-padding
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    fieldDescription="Add the column padding left and right of each column"
+                                    fieldLabel="Horizontal Padding"
+                                    name="./horizontalPadding">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <no jcr:primaryType="nt:unstructured" text="No padding" value="no"/>
+                                    <small jcr:primaryType="nt:unstructured" text="Small padding" value="small"/>
+                                    <medium jcr:primaryType="nt:unstructured" text="Medium padding" value="medium"/>
+                                    <large jcr:primaryType="nt:unstructured" text="Large padding" value="large"/>
+                                </items>
+                            </horizontal-padding>
+                            <column-layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    fieldLabel="Column Layout"
+                                    name="./columnLayout">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <one-column jcr:primaryType="nt:unstructured" text="1 Column (100%)" value="one-column"/>
+                                    <two-columns jcr:primaryType="nt:unstructured" text="2 Columns (50% / 50%)" value="two-columns"/>
+                                    <two-columns-40-60 jcr:primaryType="nt:unstructured" text="2 Columns (40% / 60%)" value="two-columns-40-60"/>
+                                    <two-columns-60-40 jcr:primaryType="nt:unstructured" text="2 Columns (60% / 40%)" value="two-columns-60-40"/>
+                                    <two-columns-33-66 jcr:primaryType="nt:unstructured" text="2 Columns (33% / 66%)" value="two-columns-33-66"/>
+                                    <two-columns-66-33 jcr:primaryType="nt:unstructured" text="2 Columns (66% / 33%)" value="two-columns-66-33"/>
+                                    <three-columns jcr:primaryType="nt:unstructured" text="3 Columns" value="three-columns"/>
+                                    <four-columns jcr:primaryType="nt:unstructured" text="4 Columns" value="four-columns"/>
+                                </items>
+                            </column-layout>
+                            <backgroundColor
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    fieldLabel="Background Color"
+                                    name="./backgroundColor"
+                                    value="white">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <white
+                                            jcr:primaryType="nt:unstructured"
+                                            text="White"
+                                            value="255, 255, 255"/>
+                                    <black
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Black"
+                                            value="0, 0, 0"/>
+                                </items>
+                            </backgroundColor>
+                            <opacity
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    fieldLabel="Background Opacity"
+                                    name="./backgroundOpacity"
+                                    value="none">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <transparent
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Transparent"
+                                            value="0.0"/>
+                                    <opacity0.1
+                                            jcr:primaryType="nt:unstructured"
+                                            text="10%"
+                                            value="0.1"/>
+                                    <opacity0.2
+                                            jcr:primaryType="nt:unstructured"
+                                            text="20%"
+                                            value="0.2"/>
+                                    <opacity0.3
+                                            jcr:primaryType="nt:unstructured"
+                                            text="30%"
+                                            value="0.3"/>
+                                    <opacity0.4
+                                            jcr:primaryType="nt:unstructured"
+                                            text="40%"
+                                            value="0.4"/>
+                                    <opacity0.5
+                                            jcr:primaryType = "nt:unstructured"
+                                            text = "50%"
+                                            value = "0.5"/>
+                                    <opacity0.6
+                                            jcr:primaryType="nt:unstructured"
+                                            text="60%"
+                                            value="0.6"/>
+                                    <opacity0.7
+                                            jcr:primaryType="nt:unstructured"
+                                            text="70%"
+                                            value="0.7"/>
+                                    <opacity0.8
+                                            jcr:primaryType="nt:unstructured"
+                                            text="80%"
+                                            value="0.8"/>
+                                    <opacity0.9
+                                            jcr:primaryType="nt:unstructured"
+                                            text="90%"
+                                            value="0.9"/>
+                                    <opaque
+                                            jcr:primaryType="nt:unstructured"
+                                            text="opaque"
+                                            value="1"/>
+                                </items>
+                            </opacity>
+                            <backgroundImage
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                    fieldDescription="Provide path for image"
+                                    fieldLabel="Background Image"
+                                    name="./backgroundImage"
+                                    predicate="hierarchy"
+                                    rootPath="/content/dam"/>
+                            <removeVerticalPadding
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                    text="Remove outer vertical padding"
+                                    name="./removeVerticalPadding"
+                                    value="no-vertical-padding"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab1>
+        </items>
+    </content>
+</jcr:root>

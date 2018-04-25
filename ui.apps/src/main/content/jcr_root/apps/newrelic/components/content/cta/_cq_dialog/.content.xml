@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="CTA"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <ctainfo
+                jcr:primaryType="nt:unstructured"
+                jcr:title="CTA Options"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+					<items jcr:primaryType="nt:unstructured">
+                    	<column
+                        	jcr:primaryType="nt:unstructured"
+                        	sling:resourceType="granite/ui/components/foundation/container">
+							<items jcr:primaryType="nt:unstructured">
+								<position
+									jcr:primaryType="nt:unstructured"
+									jcr:title="CTA Position"
+									sling:resourceType="granite/ui/components/foundation/form/fieldset"
+									title="CTA Position">
+									<items jcr:primaryType="nt:unstructured">
+										<ctaPosition
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/foundation/form/select"
+											fieldLabel="CTA Position"
+											defaultValue="ctaPositionLeft"
+											name="./ctaPosition">
+											<items jcr:primaryType="nt:unstructured">
+												<left
+													jcr:primaryType="nt:unstructured"
+													text="Left"
+													value="ctaPositionLeft"/>
+												<center
+													jcr:primaryType="nt:unstructured"
+													text="Center"
+													value="ctaPositionCenter"/>
+												<right
+													jcr:primaryType="nt:unstructured"
+													text="Right"
+													value="ctaPositionRight"/>
+											</items>
+										</ctaPosition>
+									</items>
+								</position>
+								<cta1
+									jcr:primaryType="nt:unstructured"
+									jcr:title="The first CTA"
+									sling:resourceType="granite/ui/components/foundation/form/fieldset"
+									title="The first CTA">
+									<items jcr:primaryType="nt:unstructured">
+										<firstCtaText
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/foundation/form/textfield"
+											fieldLabel="Text"
+											fieldDescription="A maximum of 20 characters are allowed"
+											required="{Boolean}true"
+											init="character-count"
+											maximumlength="20"
+											defaultValue="Learn More"
+											name="./firstCtaText"/>
+										<firstCtaUrl
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+											fieldLabel="Redirect Url"
+											rootPath="/content"
+											name="./firstCtaUrl"/>
+										<firstCtaNewtab
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/foundation/form/checkbox"
+											text="Open in new tab? (external link)"
+											name="./firstCtaNewtab"
+											value="{Boolean}true"/>
+										<newtab-delete
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/foundation/form/hidden"
+											name="./newtab@Delete"
+											value="{Boolean}true"/>
+										<firstCtaButtonType
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/foundation/form/select"
+											fieldLabel="Button Type"
+											defaultValue="grnBtn"
+											name="./firstCtaButtonType"
+											value="btn-large black">
+											<items jcr:primaryType="nt:unstructured">
+												<blackBtn
+														jcr:primaryType="nt:unstructured"
+														text="Black"
+														value="btn-large black"/>
+												<purpleBtn
+														jcr:primaryType="nt:unstructured"
+														text="Purple Button"
+														value="btn-large purple"/>
+												<secondaryPurpleBtn
+														jcr:primaryType="nt:unstructured"
+														text="Secondary Purple"
+														value="btn-large secondary-purple"/>
+												<orange
+														jcr:primaryType="nt:unstructured"
+														text="Orange Button"
+														value="btn-large orange"/>
+												<blue
+														jcr:primaryType="nt:unstructured"
+														text="Blue Button"
+														value="btn-large blue"/>
+												<blackLink
+														jcr:primaryType="nt:unstructured"
+														text="Black Text"
+														value="link black"/>
+												<orangeLink
+														jcr:primaryType="nt:unstructured"
+														text="Orange Text"
+														value="link orange"/>
+												<purpleLink
+														jcr:primaryType="nt:unstructured"
+														text="Purple Text"
+														value="link purple"/>
+												<blueLink
+														jcr:primaryType="nt:unstructured"
+														text="Blue Text"
+														value="link blue"/>
+												<green
+														jcr:primaryType="nt:unstructured"
+														text="Primary Green"
+														value="grnBtn"/>
+												<white
+														jcr:primaryType="nt:unstructured"
+														text="Primary White"
+														value="grnBtn whiteBtn"/>
+												<outline
+														jcr:primaryType="nt:unstructured"
+														text="Primary Outline"
+														value="grnBtn outlineBtn"/>
+											</items>
+										</firstCtaButtonType>
+									</items>
+								</cta1>
+
+								<cta2
+									jcr:primaryType="nt:unstructured"
+									jcr:title="The second CTA"
+									sling:resourceType="granite/ui/components/foundation/form/fieldset"
+									title="The second CTA">
+									<items jcr:primaryType="nt:unstructured">
+										<secondCtaText
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/foundation/form/textfield"
+											fieldLabel="Text"
+											fieldDescription="A maximum of 20 characters are allowed"
+											required="{Boolean}true"
+											init="character-count"
+											maximumlength="20"
+											defaultValue="Learn More"
+											name="./secondCtaText"/>
+										<secondCtaUrl
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+											fieldLabel="Redirect Url"
+											rootPath="/content"
+											name="./secondCtaUrl"/>
+										<secondCtaNewtab
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/foundation/form/checkbox"
+											text="Open in new tab? (external link)"
+											name="./secondCtaNewtab"
+											value="{Boolean}true"/>
+										<newtab-delete
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/foundation/form/hidden"
+											name="./newtab@Delete"
+											value="{Boolean}true"/>
+										<secondCtaButtonType
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/foundation/form/select"
+											fieldLabel="Button Type"
+											defaultValue="grnBtn"
+											name="./secondCtaButtonType"
+											value="grnBtn">
+											<items jcr:primaryType="nt:unstructured">
+												<blackBtn
+														jcr:primaryType="nt:unstructured"
+														text="Black"
+														value="btn-large black"/>
+												<purpleBtn
+														jcr:primaryType="nt:unstructured"
+														text="Purple Button"
+														value="btn-large purple"/>
+												<secondaryPurpleBtn
+														jcr:primaryType="nt:unstructured"
+														text="Secondary Purple"
+														value="btn-large secondary-purple"/>
+												<orange
+														jcr:primaryType="nt:unstructured"
+														text="Orange Button"
+														value="btn-large orange"/>
+												<blue
+														jcr:primaryType="nt:unstructured"
+														text="Blue Button"
+														value="btn-large blue"/>
+												<blackLink
+														jcr:primaryType="nt:unstructured"
+														text="Black Text"
+														value="link black"/>
+												<orangeLink
+														jcr:primaryType="nt:unstructured"
+														text="Orange Text"
+														value="link orange"/>
+												<purpleLink
+														jcr:primaryType="nt:unstructured"
+														text="Purple Text"
+														value="link purple"/>
+												<blueLink
+														jcr:primaryType="nt:unstructured"
+														text="Blue Text"
+														value="link blue"/>
+												<green
+														jcr:primaryType="nt:unstructured"
+														text="Primary Green"
+														value="grnBtn"/>
+												<white
+														jcr:primaryType="nt:unstructured"
+														text="Primary White"
+														value="grnBtn whiteBtn"/>
+												<outline
+														jcr:primaryType="nt:unstructured"
+														text="Primary Outline"
+														value="grnBtn outlineBtn"/>
+											</items>
+										</secondCtaButtonType>
+									</items>
+								</cta2>
+							</items>
+                    	</column>
+               	 	</items>
+			</ctainfo>
+		</items>
+    </content>
+</jcr:root>

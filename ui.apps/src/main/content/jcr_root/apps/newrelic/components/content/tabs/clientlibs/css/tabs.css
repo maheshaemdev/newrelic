@@ -1,0 +1,48 @@
+.bg-dark .tab-content{
+    color:white;
+}
+
+.tabs-container .nav-tabs{
+    border-bottom:0px !important:
+}
+
+.tabs-container .nav-tabs{
+    border-bottom:0px;
+}
+
+.tabs-container .tab-pane{
+    min-height:150px;
+}
+
+.tabs-container .nav-tabs > li > a{
+	padding:0px;
+    margin: 0 20px 40px 0;
+}
+.tabs-container .nav-tabs > li > a,.tabs-container .nav-tabs > li > a:hover{
+	background-color:transparent;
+    border:0px !important;
+}
+.tabs-container .nav-tabs > li.active > a, .tabs-container .nav-tabs > li.active > a:hover{
+	background-color:transparent;
+    border:0px !important;
+    border-bottom:3px solid #0ab0bf !important;
+
+}
+
+.tabs-container .nav-tabs > li.active > a{
+	height:60px;
+}
+
+.tabs-container li img{
+	height:30px;
+}
+
+.tabs-container h3{
+    font-size:28px;
+    margin-bottom:13px;
+    margin-top:0px;
+}
+
+.tabs-container p{
+    margin-bottom:13px;
+}

@@ -1,0 +1,25 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+    [Edit CTA links]
+</div>
+
+<sly data-sly-use.cta="com.newrelic.assignment.core.components.CTA"></sly>
+<div class="component-cta-wrapper ${cta.ctaPosition} container">
+    <sly data-sly-test="${cta.firstCtaText}" data-sly-unwrap>
+        <a id="first-cta" class="component-cta btn ${cta.firstCtaButtonType} btn-primary"
+           href="${cta.firstCtaUrl}"
+           target="${cta.firstCtaNewtab ? '_blank' : ''}">
+            <span>
+                ${cta.firstCtaText}
+            </span>
+        </a>
+    </sly>
+    <sly data-sly-test="${cta.secondCtaText}" data-sly-unwrap>
+        <a class="component-cta btn ${cta.secondCtaButtonType} btn-secondary"
+           href="${cta.secondCtaUrl}"
+           target="${cta.secondCtaNewtab ? '_blank' : ''}">
+            <span>
+                ${cta.secondCtaText}
+            </span>
+        </a>
+    </sly>
+</div>

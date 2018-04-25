@@ -1,0 +1,8 @@
+<div data-sly-test="${wcmmode.edit}">
+    [Edit Container component here]
+</div>
+
+<sly data-sly-use.parContainer="com.newrelic.assignment.core.components.Container"></sly>
+<div class="par-container ${parContainer.backgroundColorCls} ${parContainer.verticalPaddingStyle} ${parContainer.verticalAlignmentCls} " style="background-image: url(${parContainer.backgroundImagePath @ context='html'});background-size: 100% 100%;">
+    <sly data-sly-resource="${'container'  @ resourceType='wcm/foundation/components/parsys'}"/>
+</div>

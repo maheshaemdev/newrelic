@@ -1,0 +1,33 @@
+<div data-sly-test="${wcmmode.edit}">
+    [Edit Tabs component here]
+</div>
+
+<!--<sly data-sly-use.columns="com.newrelic.assignment.core.components.TabsComponent"></sly>-->
+<div class="tabs-container">
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#apm"><img src="/etc/designs/newrelic/clientlib-site/images/logo_apm_white.svg"></a></li>
+        <li><a data-toggle="tab" href="#browser"><img src="/etc/designs/newrelic/clientlib-site/images/logo_browser_white.svg"></a></li>
+        <li><a data-toggle="tab" href="#infrastructure"><img src="/etc/designs/newrelic/clientlib-site/images/logo_infrastructure_White.svg"></a></li>
+        <li><a data-toggle="tab" href="#mobile"><img src="/etc/designs/newrelic/clientlib-site/images/logo_mobile_white.svg"></a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="apm" class="tab-pane fade in active">
+            <h3>New Relic Synthetics + New Relic APM</h3>
+            <p>Synthetic transaction traces can connect your Synthetics results to APM transaction traces. While Synthetics results capture browser-side details from each Synthetics check, transaction traces capture the activity on your app server. When you connect Synthetics to APM, you can view both sides of every Synthetics run.</p>
+        </div>
+        <div id="browser" class="tab-pane fade">
+            <h3>New Relic Synthetics + New Relic Browser</h3>
+            <p>Use New Relic Synthetics' scripted browser monitors to go beyond ensuring that your website is available, to ensuring that critical business transactions are operating correctly.</p>
+        </div>
+        <div id="infrastructure" class="tab-pane fade">
+            <h3>New Relic Synthetics + New Relic Infrastructure</h3>
+            <p>While a monitoring solution like APM monitors the systems within your infrastructure, Synthetics will be able to enhance your monitoring capabilities by giving you visibility into end-to-end performance and degradations.</p>
+        </div>
+        <div id="mobile" class="tab-pane fade">
+            <h3>New Relic Synthetics + New Relic Mobile</h3>
+            <p>New Relic Synthetics allows you to proactively monitor your website by offering browser tests, which run real, Selenium-powered scripts on your Chrome browser on your mobile device from locations around the world to ensure your content is always up, everywhere.</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+  .par-container .no-vertical-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .par-container .small-vertical-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .par-container .medium-vertical-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .par-container .large-vertical-padding {
+    padding-top: 160px;
+    padding-bottom: 80px;
+  }
+
+  .par-container top-vertical-align{
+    display:table-cell;
+    vertical-align:top;
+  }
+  .par-container bottom-vertical-align{
+      display:table-cell;
+      vertical-align:bottom;
+    }
+  .par-container middle-vertical-align{
+      display:table-cell;
+      vertical-align:middle;
+    }
+.par-container .bg-dark h2{
+    color:white;
+}

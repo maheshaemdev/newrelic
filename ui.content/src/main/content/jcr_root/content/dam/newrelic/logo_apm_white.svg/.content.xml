@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="0270ed05-6c8e-4b3e-8745-a2e945253cff">
+    <jcr:content
+        dam:relativePath="newrelic/logo_apm_white.svg"
+        jcr:lastModified="{Date}2018-04-25T12:42:31.900-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:extracted="{Date}2018-04-25T12:42:31.860-07:00"
+            dam:sha1="1f6c4ab4b17e534a71626c496d864b089a77a64c"
+            dam:size="{Long}11349"
+            dc:format="image/svg+xml"
+            dc:modified="{Date}2018-04-25T01:06:16.212-07:00"
+            jcr:lastModified="{Date}2018-04-25T12:42:31.778-07:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

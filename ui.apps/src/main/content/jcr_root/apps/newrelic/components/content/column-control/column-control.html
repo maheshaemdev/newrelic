@@ -1,0 +1,16 @@
+<div data-sly-test="${wcmmode.edit}">
+    [Edit Column control component here]
+</div>
+
+<sly data-sly-use.columns="com.newrelic.assignment.core.components.ColumnControl"></sly>
+<div class="columns-background" style="${columns.backgroundStyle @ context='html'}">
+    <div class="container column-control ${columns.removeVerticalPadding}">
+        <div class="row ${columns.columnLayout}">
+            <sly data-sly-list.item="${columns.columnControlItems}">
+                <div class="column-control-item ${item.styleClass} col-xs-12">
+                    <sly data-sly-resource="${item.columnName  @ resourceType='wcm/foundation/components/parsys'}"/>
+                </div>
+            </sly>
+        </div>
+    </div>
+</div>

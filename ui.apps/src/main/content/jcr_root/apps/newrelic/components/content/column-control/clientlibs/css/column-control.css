@@ -1,0 +1,176 @@
+#contentWrapper .innerWrap .column-control {
+  max-width: 1140px;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+#contentWrapper .innerWrap .column-control.no-vertical-padding {
+  padding: 0;
+}
+#contentWrapper .innerWrap .column-control .container.column-droppable {
+  padding: 0 15px;
+}
+#contentWrapper .innerWrap .column-control .column-control.parbase {
+  padding: 0;
+}
+.columns-background {
+  max-width: none;
+}
+.column-control .col-sm-3,
+.column-control .col-sm-4,
+.column-control .col-sm-6,
+.column-control .col-sm-8,
+.column-control .col-xs-12 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.column-control .no-horizontal-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+.column-control .no-vertical-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.column-control .small-vertical-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.column-control .medium-vertical-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.column-control .large-vertical-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.column-control .two-columns .small-horizontal-padding.column-1,
+.column-control .two-columns-40-60 .small-horizontal-padding.column-1,
+.column-control .two-columns-60-40 .small-horizontal-padding.column-1,
+.column-control .two-columns-33-66 .small-horizontal-padding.column-1,
+.column-control .two-columns-66-33 .small-horizontal-padding.column-1 {
+  padding-right: 10px;
+}
+.column-control .two-columns .small-horizontal-padding.column-2,
+.column-control .two-columns-40-60 .small-horizontal-padding.column-2,
+.column-control .two-columns-60-40 .small-horizontal-padding.column-2,
+.column-control .two-columns-33-66 .small-horizontal-padding.column-2,
+.column-control .two-columns-66-33 .small-horizontal-padding.column-2 {
+  padding-left: 10px;
+}
+.column-control .two-columns .medium-horizontal-padding.column-1,
+.column-control .two-columns-40-60 .medium-horizontal-padding.column-1,
+.column-control .two-columns-60-40 .medium-horizontal-padding.column-1,
+.column-control .two-columns-33-66 .medium-horizontal-padding.column-1,
+.column-control .two-columns-66-33 .medium-horizontal-padding.column-1 {
+  padding-right: 15px;
+}
+.column-control .two-columns .medium-horizontal-padding.column-2,
+.column-control .two-columns-40-60 .medium-horizontal-padding.column-2,
+.column-control .two-columns-60-40 .medium-horizontal-padding.column-2,
+.column-control .two-columns-33-66 .medium-horizontal-padding.column-2,
+.column-control .two-columns-66-33 .medium-horizontal-padding.column-2 {
+  padding-left: 15px;
+}
+.column-control .two-columns .large-horizontal-padding.column-1,
+.column-control .two-columns-40-60 .large-horizontal-padding.column-1,
+.column-control .two-columns-60-40 .large-horizontal-padding.column-1,
+.column-control .two-columns-33-66 .large-horizontal-padding.column-1,
+.column-control .two-columns-66-33 .large-horizontal-padding.column-1 {
+  padding-right: 25px;
+}
+.column-control .two-columns .large-horizontal-padding.column-2,
+.column-control .two-columns-40-60 .large-horizontal-padding.column-2,
+.column-control .two-columns-60-40 .large-horizontal-padding.column-2,
+.column-control .two-columns-33-66 .large-horizontal-padding.column-2,
+.column-control .two-columns-66-33 .large-horizontal-padding.column-2 {
+  padding-left: 25px;
+}
+.column-control .three-columns .small-horizontal-padding.column-1 {
+  padding-right: 13.3px;
+}
+.column-control .three-columns .small-horizontal-padding.column-2 {
+  padding-left: 6.7px;
+  padding-right: 6.7px;
+}
+.column-control .three-columns .small-horizontal-padding.column-3 {
+  padding-left: 13.3px;
+}
+.column-control .three-columns .medium-horizontal-padding.column-1 {
+  padding-right: 20px;
+}
+.column-control .three-columns .medium-horizontal-padding.column-2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.column-control .three-columns .medium-horizontal-padding.column-3 {
+  padding-left: 20px;
+}
+.column-control .three-columns .large-horizontal-padding.column-1 {
+  padding-right: 33.4px;
+}
+.column-control .three-columns .large-horizontal-padding.column-2 {
+  padding-left: 16.6px;
+  padding-right: 16.6px;
+}
+.column-control .three-columns .large-horizontal-padding.column-3 {
+  padding-left: 33.4px;
+}
+.column-control .four-columns .small-horizontal-padding.column-1 {
+  padding-right: 15px;
+}
+.column-control .four-columns .small-horizontal-padding.column-2 {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.column-control .four-columns .small-horizontal-padding.column-3 {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.column-control .four-columns .small-horizontal-padding.column-4 {
+  padding-left: 15px;
+}
+.column-control .four-columns .medium-horizontal-padding.column-1 {
+  padding-right: 22.5px;
+}
+.column-control .four-columns .medium-horizontal-padding.column-2 {
+  padding-left: 7.5px;
+  padding-right: 15px;
+}
+.column-control .four-columns .medium-horizontal-padding.column-3 {
+  padding-left: 15px;
+  padding-right: 7.5px;
+}
+.column-control .four-columns .medium-horizontal-padding.column-4 {
+  padding-left: 22.5px;
+}
+.column-control .four-columns .large-horizontal-padding.column-1 {
+  padding-right: 37.5px;
+}
+.column-control .four-columns .large-horizontal-padding.column-2 {
+  padding-left: 12.5px;
+  padding-right: 25px;
+}
+.column-control .four-columns .large-horizontal-padding.column-3 {
+  padding-left: 25px;
+  padding-right: 12.5px;
+}
+.column-control .four-columns .large-horizontal-padding.column-4 {
+  padding-left: 37.5px;
+}
+@media screen and (min-width: 769px) {
+  .column-control .container {
+    /*padding: 30px 15px;*/
+    padding: 0px !important;
+    /*width:100% !important;*/
+  }
+  #contentWrapper .innerWrap .column-control .container.column-droppable {
+    width: auto;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contentWrapper .innerWrap .column-control .column-control-item {
+    padding: 15px;
+  }
+}
+
